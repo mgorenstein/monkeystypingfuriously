@@ -36,7 +36,7 @@ def is_english_string(string):
 
 if __name__ == '__main__':
     successes = 0
-    while successes < 2:
+    while successes < 1000:
         string = create_string()
         total_tries += 1
         if is_english_string(string):
