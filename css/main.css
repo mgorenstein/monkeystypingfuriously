@@ -1,0 +1,38 @@
+body {
+    background: #FFF;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Helvetica';
+    }
+    
+    .sentence {
+        font-family: 'Inconsolata';
+    }
+
+    .button {
+        border-width: 1.5px;
+        border-color: black;
+        border-style: dashed; 
+        padding: 4px;
+    }
+
+    .red {
+        color: red;
+    }
+    
+    h1, h2 {
+        font-family: 'Miniver', cursive;
+        font-weight: normal;
+    }
+    
+    h1 {
+        color: #0041C2;
+        font-style: italic;
+        margin-top: 0;
+    }
+
+    a {
+        color: #0041C2;
+        text-decoration: none;
+    }
+}
