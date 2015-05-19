@@ -1,7 +1,7 @@
 ---
 ---
 
-var button = document.getElementById("button");
+button = document.getElementById("button");
 button.onclick = goToNewSentence;
 
 function goToNewSentence() {
