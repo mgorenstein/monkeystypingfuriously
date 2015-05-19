@@ -1,9 +1,6 @@
 ---
 ---
 
-button = document.getElementById("button");
-button.onclick = goToNewSentence;
-
 function goToNewSentence() {
     location.href = "{{ site.baseurl }}/sentences/".concat(getRandomInt());
 };
