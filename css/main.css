@@ -4,14 +4,7 @@ body {
     font-weight: normal;
     font-family: 'Helvetica';
     }
-    
-    #button {
-        border-width: 1.5px;
-        border-color: black;
-        border-style: dashed; 
-        padding: 4px;
-    }
-    
+
     .sentence {
         font-family: 'Inconsolata';
     }
@@ -34,5 +27,16 @@ body {
     a {
         color: #0041C2;
         text-decoration: none;
+    }
+
+    #button {
+        border-width: 1.5px;
+        border-color: black;
+        border-style: dashed; 
+        padding: 4px;
+    }
+
+    #button:hover {
+        color: black;
     }
 }
