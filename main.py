@@ -17,7 +17,8 @@ def get_char():
 
 def create_string():
     string = ''
-    for _ in range(15):
+    length = random.randint(13,20)
+    for _ in range(length):
         string += get_char()
     return string
 
@@ -36,8 +37,8 @@ def is_english_string(string):
 
 if __name__ == '__main__':
     successes = 0
-    while True:
-        try:
+    try:
+        while successes < 100:
             string = create_string()
             total_tries += 1
             if is_english_string(string):
@@ -47,6 +48,9 @@ if __name__ == '__main__':
                 text = string.strip().capitalize() + end_mark()
                 with open("_sentences/%s.html" % (successes + successful_tries), "w+") as new:
                     new.write(front_matter + text)
-        except:
-            with open("counts.txt", "w") as counts:
+    except Exception as e:
+        print e
+        pass
+    finally:
+        with open("counts.txt", "w") as counts:
                 counts.write('%s\n%s' % (total_tries, successes + successful_tries))
