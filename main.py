@@ -35,12 +35,16 @@ def is_english_string(string):
     return True
 
 if __name__ == '__main__':
-    while True:
+    successes = 0
+    while successes < 100:
         string = create_string()
         total_tries += 1
         if is_english_string(string):
-            successful_tries += 1
-            front_matter = '---\nlayout: sentence\nattempt: %s\n---\n' % (total_tries)
+            successes += 1
+            attempt_number = '{:.3e}'.format(total_tries).replace('e+', ' x 10<sup>') + '</sup>'
+            front_matter = '---\nlayout: sentence\nattempt: %s\n---\n' % (attempt_number)
             text = string.strip().capitalize() + end_mark()
-            with open('sentences/%s.html' % (successful_tries), 'w+') as new:
+            with open("_sentences/%s.html" % (successes + successful_tries), "w+") as new:
                 new.write(front_matter + text)
+    with open("counts.txt", "w") as counts:
+        counts.write('%s\n%s' % (total_tries, successes + successful_tries))
