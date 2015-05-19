@@ -5,6 +5,11 @@ body {
     font-family: 'Helvetica';
     }
 
+    .about {
+        width: 350px;
+        padding: 10px;
+    }
+
     .sentence {
         font-family: 'Inconsolata';
     }
