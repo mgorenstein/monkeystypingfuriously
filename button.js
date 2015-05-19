@@ -2,10 +2,10 @@
 ---
 
 var button = document.getElementById("button");
-button.onclick = goToNewSentence();
+button.onclick = goToNewSentence;
 
 function goToNewSentence() {
-    location.href = "{{ site.baseurl }}/sentences/" + getRandomInt();
+    location.href = "{{ site.baseurl }}/sentences/".concat(getRandomInt());
 };
 
 function getRandomInt() {
