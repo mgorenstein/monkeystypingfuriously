@@ -36,7 +36,7 @@ def is_english_string(string):
 
 if __name__ == '__main__':
     successes = 0
-    while successes < 1000:
+    while True:
         try:
             string = create_string()
             total_tries += 1
@@ -48,7 +48,5 @@ if __name__ == '__main__':
                 with open("_sentences/%s.html" % (successes + successful_tries), "w+") as new:
                     new.write(front_matter + text)
         except:
-            pass
-        finally:
             with open("counts.txt", "w") as counts:
                 counts.write('%s\n%s' % (total_tries, successes + successful_tries))
