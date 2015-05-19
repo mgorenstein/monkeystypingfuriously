@@ -5,15 +5,15 @@ body {
     font-family: 'Helvetica';
     }
     
-    .sentence {
-        font-family: 'Inconsolata';
-    }
-
-    .button {
+    #button {
         border-width: 1.5px;
         border-color: black;
         border-style: dashed; 
         padding: 4px;
+    }
+    
+    .sentence {
+        font-family: 'Inconsolata';
     }
 
     .red {

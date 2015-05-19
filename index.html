@@ -5,8 +5,5 @@ layout: default
 <p>Could a million furiously typing monkeys reproduce a snippet of Shakespeare?<br>
     Could they even generate a single grammatical sentence?<br>
     I've assembled an army of primates <b>in the cloud</b>, so,<br><br>
-<a class='button'>Let's find out</a></p>
+<a id='button'>Let's find out</a></p>
 <p><i>this is a <a href='http://markgorenste.in' class='red'>mark gorenstein</a> unoriginal.</i></p>
-{% for item in site.collections.sentences.docs %}
-    {{ item.attempt }}
-{% endfor %}
