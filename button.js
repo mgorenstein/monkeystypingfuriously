@@ -6,5 +6,5 @@ document.getElementsByClassName("button").onclick = function () {
 };
 
 function getRandomInt() {
-    return Math.floor(Math.random() * {{ site.collections[0] | size }} + 1);
+    return Math.floor(Math.random() * {{ site.collections.sentences.size }} + 1);
 }; 
