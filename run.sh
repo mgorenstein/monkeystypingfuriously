@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/workspace/monkeystypingfuriously
+cd ~/monkeystypingfuriously
 python main.py
 git checkout gh-pages
 git checkout master -- _sentences
